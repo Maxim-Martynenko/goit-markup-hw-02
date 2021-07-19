@@ -1,0 +1,46 @@
+/* Основные цвета:
+- Задний фон #e5e5e5
+- Передний фон #F5F4FA
+- Шапка, текст в хиро, адрес, лого в футере #FFFFFF
+- Футер #2F303A
+- Основной текст #757575
+- Текст кнопок, подзаголовков #212121
+- Активные кнопки, лого #2196F3
+- Лого в шапке #000000
+- Контакты в футере rgba(255, 255, 255, 0,6)
+*/
+
+:root {
+  --background-color: #e5e5e5;
+  --foreground-color: #f5f4fa;
+  --header-color: #ffffff;
+  --footer-color: #2f303a;
+  --text-1-color: #757575;
+  --text-2-color: #212121;
+  --active-btn-color: #2196f3;
+  --logo-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--header-color);
+}
+
+footer {
+  background-color: var(--footer-color);
+}
+
+.logo {
+  color: var(--active-btn-color);
+}
+
+.logo-1 {
+  color: var(--logo-color);
+}
+
+.logo-2 {
+  color: var(--header-color);
+}
