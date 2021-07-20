@@ -1,13 +1,13 @@
 /* Основные цвета:
-- Задний фон #e5e5e5
-- Передний фон #F5F4FA
-- Шапка, текст в хиро, адрес, лого в футере #FFFFFF
-- Футер #2F303A
-- Основной текст #757575
-- Текст кнопок, подзаголовков #212121
-- Активные кнопки, лого #2196F3
+- Задний фон - #e5e5e5
+- Передний фон - #F5F4FA
+- Шапка, текст на баннер, адрес, лого в футере - #FFFFFF
+- Футер - #2F303A
+- Основной текст - #757575
+- Текст кнопок, подзаголовков - #212121
+- Активные кнопки, лого - #2196F3
 - Лого в шапке #000000
-- Контакты в футере rgba(255, 255, 255, 0,6)
+- Контакты в футере - rgba(255, 255, 255, 0,6)
 */
 
 :root {
@@ -25,16 +25,29 @@ body {
   background-color: var(--background-color);
 }
 
-header {
-  background-color: var(--header-color);
+ul {
+  list-style: none;
 }
 
 footer {
   background-color: var(--footer-color);
 }
 
+/* ШАПКА */
+
+header {
+  background-color: var(--header-color);
+}
+
+/* logo */
+
 .logo {
   color: var(--active-btn-color);
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.2;
 }
 
 .logo-1 {
@@ -43,4 +56,64 @@ footer {
 
 .logo-2 {
   color: var(--header-color);
+}
+
+/* nav */
+.nav-link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text-2-color);
+  text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--active-btn-color);
+}
+
+/* contacts */
+.head-contacts {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--text-1-color);
+}
+
+.head-contacts:hover,
+.head-contacts:focus {
+  color: var(--active-btn-color);
+}
+
+/* БАННЕР */
+.main {
+  background-color: #2f303a;
+}
+
+.main-title {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+
+.main-title-btn {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
 }
